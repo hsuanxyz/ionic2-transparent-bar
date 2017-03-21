@@ -43,10 +43,10 @@ A transparent bar DEMO in ionic2
 │   │   │   ├── home.html        
 │   │   │   ├── home.scss         
 │   │   │   └── home.ts           
-│   │   ├── transparent-bar
-│   │   │   ├── transparent-bar.html         * Contacts template
-│   │   │   ├── transparent-bar.scss         * Contacts stylesheet
-│   │   │   └── transparent-bar.ts           * Contacts code
+│   │   ├── transparent-bar                  * transparent-bar page
+│   │   │   ├── transparent-bar.html         * transparent-bar template
+│   │   │   ├── transparent-bar.scss         * transparent-bar stylesheet
+│   │   │   └── transparent-bar.ts           * transparent-bar code
 │   │   └── tabs
 │   │       ├── tabs.html
 │   │       └── tabs.ts
@@ -58,13 +58,13 @@ A transparent bar DEMO in ionic2
 ```
 ## Environment
 ```
-Cordova CLI: 6.4.0 
+Cordova CLI: 6.4.0
 Ionic Framework Version: 2.2.0
 Ionic CLI Version: 2.2.1
 Ionic App Lib Version: 2.2.0
 Ionic App Scripts Version: 1.1.4
-ios-deploy version: 1.9.1 
-ios-sim version: 5.0.13 
+ios-deploy version: 1.9.1
+ios-sim version: 5.0.13
 OS: macOS Sierra
 Node Version: v6.9.2
 Xcode version: Xcode 8.2.1 Build version 8C1002
