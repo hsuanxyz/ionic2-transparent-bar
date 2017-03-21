@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+hooks/
+platforms/
+plugins/cordova-plugin-console
+plugins/cordova-plugin-device
+plugins/cordova-plugin-splashscreen
+plugins/cordova-plugin-statusbar
+plugins/cordova-plugin-whitelist
+plugins/ionic-plugin-keyboard
+plugins/ios.json
+www/
+.idea/
+node_modules/
+resources/

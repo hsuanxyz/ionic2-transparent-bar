@@ -1,0 +1,108 @@
+page-transparent-bar {
+
+  .scroll-content{
+    margin-top: 0 !important;
+    padding-top: 44px;
+  }
+
+  ion-navbar{
+    transition: all .3s;
+    .back-button,.bar-button{
+      //text-shadow: 0 0 5px #000000;
+      color: #fff;
+    }
+  }
+
+  .header-md::after{
+    background-image: none;
+  }
+
+  .header-ios .toolbar-background-ios,.toolbar-background-md,.toolbar-background-wp{
+    border-style: none;
+    background: none;
+    border-color: rgba(0, 0, 0, 0)
+
+  }
+
+
+  .show-background{
+    border-style: none;
+    background: #3db5e7;
+  }
+
+  .transition{
+    transition: background-size .3s ease-in;
+  }
+
+  .content{
+    background-color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+  }
+
+  .user-info {
+    width: 100%;
+    height: 135px;
+    img {
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.8);
+      margin: 0 auto;
+    }
+    h4,p{
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.31);
+    }
+    h4{
+      font-size: 1em;
+      margin: 5px 0;
+    }
+    p{
+      padding:0 10px;
+      font-size: .8em;
+    }
+  }
+
+
+  .articles{
+    background-color: #fff;
+    padding-top: 20px;
+    .article-item{
+      margin-bottom: 10px;
+      background-color: #eee;
+      padding: 10px;
+      height: 80px;
+      img{
+        float: left;
+        display: block;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.8);
+      }
+
+      .placeholders{
+        float: left;
+        width: 220px;
+        margin-left: 20px;
+
+        .placeholder{
+          width:100%;
+          height: 10px;
+          margin-bottom: 5px;
+          background-color: #9d9d9d;
+          float: left;
+        }
+
+        .p20 {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
