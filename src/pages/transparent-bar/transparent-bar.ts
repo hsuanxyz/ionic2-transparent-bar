@@ -1,5 +1,5 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {Component, ChangeDetectorRef, ViewChild} from '@angular/core';
+import { NavController, NavParams, Content } from 'ionic-angular';
 
 /*
   Generated class for the TransparentBar page.
@@ -12,7 +12,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'transparent-bar.html'
 })
 export class TransparentBarPage {
-
+    @ViewChild(Content) content: Content;
     showToolbar:boolean = false;
     headerImgSize:string = '100%';
     headerImgUrl:string = '';
@@ -23,14 +23,18 @@ export class TransparentBarPage {
         public navCtrl: NavController,
         public navParams: NavParams,
         public ref: ChangeDetectorRef,
-    ) {}
+    ) {
+
+
+    }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TransparentBarPage');
+      console.log('ionViewDidLoad TransparentBarPage');
 
-    this.headerImgUrl = 'http://www.005.tv/uploads/allimg/161025/1510515W4-8.jpg'
+      this.headerImgUrl = 'http://www.005.tv/uploads/allimg/161025/1510515W4-8.jpg'
+
+      this.content.enableScrollListener();
   }
-
     onScroll($event: any){
         let scrollTop = $event.scrollTop;
         this.showToolbar = scrollTop >= 120;
