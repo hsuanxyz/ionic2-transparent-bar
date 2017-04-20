@@ -1,4 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
@@ -18,7 +20,8 @@ import { TransparentBarPage } from '../pages/transparent-bar/transparent-bar'
     TransparentBarPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+      BrowserModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -31,9 +31,9 @@ export class TransparentBarPage {
   ionViewDidLoad() {
       console.log('ionViewDidLoad TransparentBarPage');
 
-      this.headerImgUrl = 'http://www.005.tv/uploads/allimg/161025/1510515W4-8.jpg'
+      this.headerImgUrl = './assets/bg.jpg';
 
-      this.content.enableScrollListener();
+      // this.content.enableScrollListener();
   }
     onScroll($event: any){
         let scrollTop = $event.scrollTop;
